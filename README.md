@@ -2,7 +2,9 @@
 
 In this project, I built "One Day" - a bucket-list manager. One of the best ways to get things done is to write them down. With "One Day", you can list the adventures you want to do before the last good-bye and flag them out when there are done. "One Day" has a responsive layout (see GIF below) and renders well on computers, tablets and mobiles. It has been deployed to Heroku.
 
-[Click me to check "One Day" out!](https://one-day-app.herokuapp.com/)
+This version of "One Day" uses **Sequelize**, as object-relational mapper. It allowed me to define a set of functions, which correspond to different queries made to our database (see code snippet below).
+
+[Click me to check "One Day" out!]()
 
 The adventures and things entered by the user are stored in a **mySQL database using JawsDB**. The data are thus persistent and will be displayed on the app as long as they aren't deleted from the database itself. 
 
@@ -23,12 +25,13 @@ To build this app, I used the following technologies:
 - Express
 - Handlebars
 - mySQL
+- Sequelize
 
 ---
 
-### Code snippet showing the creation of the Object-Relational Mapper, or ORM
+### Code snippet showing the configuration of sequelize
 
-![Code snippet showing the ORM](https://github.com/SophM/One-Day/blob/master/for-readme/code-snippet-ORM.png?raw=true)
+![Code snippet showing the configuration of sequelize]()
 
 ---
 
