@@ -1,0 +1,65 @@
+#html {
+    position: relative;
+    min-height: 100% !important;
+}
+
+#body {
+    font-family: 'Permanent Marker', cursive;
+    color: #14211a;
+    height: 100% !important;
+    margin-bottom: 40px !important;
+    background-image: url("../images/paysage.jpg");
+    background-position: fixed center;
+    background-size: cover;
+}
+
+#footer {
+    position: absolute;
+    font-size: 1.1rem;
+    bottom: 15px;
+    height: 40px !important;
+    width: 100% !important;
+}
+
+.card-header, .done-btn, #add-btn {
+    background-color: #14211a;
+    color: white;
+    opacity: 0.8;
+}
+
+#add-btn {
+    background-color: rgb(7.8, 12.9, 10.2, 0.8)
+}
+
+#text-container, #thing {
+    font-size: 1.4rem;
+}
+
+.card {
+    opacity: 0.8;
+}
+
+#label {
+    font-size: 1.6rem;
+}
+
+/* for responsive font-size */
+@media screen and (max-width: 485px) {
+    #text-title {
+        font-size: 3.4rem;
+    }
+
+    #text-subtitle {
+        font-size: 1.7rem;
+    }
+
+    #text-container, #thing {
+        font-size: 1.2rem;
+    }
+
+    #label {
+        font-size: 1.4rem;
+    }
+}
+
+

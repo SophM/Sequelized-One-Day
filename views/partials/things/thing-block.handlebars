@@ -1,0 +1,8 @@
+{{!-- to list the things --}}
+<li class="list-group-item">
+	{{thing_name}}
+    {{!-- if the thing hasn't been done, create a button "Done!" --}}
+    {{#if notDone}}
+	    <button class="btn ml-3 p-1 done-btn" data-id="{{id}}">Done!</button>
+    {{/if}}
+</li>
