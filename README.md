@@ -29,29 +29,27 @@ To build this app, I used the following technologies:
 
 ---
 
-### Code snippet showing the configuration of sequelize
+### Code snippet showing the configuration of the sequelize model
 
-![Code snippet showing the configuration of sequelize]()
+![Code snippet showing the configuration of the sequelize model](https://github.com/SophM/Sequelized-One-Day/blob/master/for-readme/code-snippet-sequelize-model.png?raw=true)
 
 ---
 
 ### Screenshot of the app
 
-![Screenshot of the app](https://github.com/SophM/One-Day/blob/master/for-readme/one-day.png?raw=true);
+![Screenshot of the app](https://github.com/SophM/Sequelized-One-Day/blob/master/for-readme/one-day.png?raw=true);
 
 ---
 
-### GIF showing the app in action
+### GIF showing the app in action - recorded with previous version but works the same!
 
-![GIF showing the app in action](https://github.com/SophM/One-Day/blob/master/for-readme/GIF-app-in-action.gif?raw=true)
-
----
-
-### GIF showing the responsive layout of "One Day"
-
-![GIF showing the responsive layout of "One Day"](https://github.com/SophM/One-Day/blob/master/for-readme/GIF-responsive-layout.gif?raw=true)
+![GIF showing the app in action](https://github.com/SophM/Sequelized-One-Day/blob/master/for-readme/GIF-app-in-action.gif?raw=true)
 
 ---
+
+### GIF showing the responsive layout of "One Day" - recorded with previous version but works the same!
+
+![GIF showing the responsive layout of "One Day"](https://github.com/SophM/Sequelized-One-Day/blob/master/for-readme/GIF-responsive-layout.gif?raw=true)
 
 ### Contribution
 
