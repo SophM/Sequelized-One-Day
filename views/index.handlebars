@@ -29,7 +29,7 @@
                 <div id="head-survey" class="card-header">What I will do</div>
                 <div id="things-to-do" class="card-body">
                     <ul class="list-group">
-                        {{#each bucketLists}}
+                        {{#each Things}}
                             {{#unless done}}
                                 {{> things/thing-block notDone=true}}
                             {{/unless}}
@@ -47,7 +47,7 @@
                 <div id="head-survey" class="card-header">What I have done</div>
                 <div id="things-to-do" class="card-body">
                     <ul class="list-group">
-                        {{#each bucketLists}}
+                        {{#each Things}}
                             {{#if done}}
                                 {{> things/thing-block notDone=false}}
                             {{/if}}

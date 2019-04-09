@@ -19,28 +19,46 @@ var router = express.Router();
 
 // define the route to display all the data from on oneDay_db
 router.get("/", function(req, res) {
-    // call the "selectAll" method from the model
-    thing.selectAll(function(data) {
+    // call the findAll method from sequelize to display all the data in the db
+    db.Thing.findAll({}).then(function(results) {
+        // console.log(results);
+        // parse the results we got back and only grab the data for each row
+        // and store them in an array called "rows"
+        var rows = [];
+        for (var i = 0; i < results.length; i++) {
+            rows.push(results[i].dataValues);
+        }
+        // console.log(rows);
         // create an object with the data we got back because handlebars needs an object
         var hbsObject = {
-            bucketLists: data
+            Things: rows
         };
+        // console.log(hbsObject);
         res.render("index", hbsObject);
     });
 });
 
 // define the route to add new data to oneDay_db
 router.post("/api/things", function(req, res) {
-    // call the "insertOne" method from the model
-    thing.insertOne("thing_name", req.body.thing, function(results) {
+    // call the create method from sequelize to add data into the database
+    db.Thing.create({
+        thing_name: req.body.thing,
+    }).then(function(results) {
         res.end();      
-    })
+    });
 });
 
 // define the route to update the data in oneDay_db
 router.put("/api/things/:id", function(req, res) {
-    // call the "updateOne" method from the model
-    thing.updateOne("done", req.body.done, "id", req.params.id, function(results) {
+    // call the update method from sequelize to change the state of a bucket-list item
+    db.Thing.update({
+        done: req.body.done,
+    },
+    {
+        where: {
+            id: req.params.id,
+        }
+    }).then(function(results) {
         res.end();      
     });
 });
