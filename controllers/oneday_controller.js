@@ -5,8 +5,9 @@
 // load the Express node package
 var express = require("express");
 
-// load the "thing.js" to import the model (thing.js) to use the methods within it
-var thing = require("../models/thing.js");
+// require all of our models by requiring the models folder
+// Save this to a variable and name it "db".
+var db = require("../models");
 
 
 // ---------------------------------------------------

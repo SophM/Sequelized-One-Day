@@ -8,6 +8,10 @@ var express = require("express");
 // load the handlebars node package for Express
 var exphbs = require("express-handlebars");
 
+// require all of our models by requiring the models folder
+// Save this to a variable and name it "db".
+var db = require("./models");
+
 
 // ---------------------------------------------------
 // Configuration of the Express app
@@ -49,7 +53,10 @@ app.use(routes);
 // Start the server
 // --------------------------------------------------- 
 
-// so that it can begin listening to client requests.
-app.listen(PORT, function() {
-    console.log("App listening on: http://localhost:" + PORT);
+// sync the sequelize models
+db.sequelize.sync().then(function() {
+    // so that it can begin listening to client requests.
+    app.listen(PORT, function() {
+        console.log("App listening on: http://localhost:" + PORT);
+    });
 });

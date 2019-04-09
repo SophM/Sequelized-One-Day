@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "root",
+    "password": "a9uLc2frfg7buEidFA",
+    "database": "oneDay_db",
+    "host": "127.0.0.1",
+    "port" : 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "kxt02liryzxwhz0n",
+    "password": "y5qrd9cmnck04klj",
+    "database": "m3c5l9fwo8phqxez",
+    "host": "fnx6frzmhxw45qcb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port" : 3306,
+    "dialect": "mysql"
+  }
+}
