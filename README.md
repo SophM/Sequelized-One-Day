@@ -4,7 +4,7 @@ In this project, I built "One Day" - a bucket-list manager. One of the best ways
 
 This version of "One Day" uses **Sequelize**, as object-relational mapper. It allowed me to define a set of functions, which correspond to different queries made to our database (see code snippet below).
 
-[Click me to check "One Day" out!]()
+[Click me to check "One Day" out!](https://one-day-sequelized.herokuapp.com/)
 
 The adventures and things entered by the user are stored in a **mySQL database using JawsDB**. The data are thus persistent and will be displayed on the app as long as they aren't deleted from the database itself. 
 
